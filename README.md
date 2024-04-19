@@ -1,1 +1,2 @@
-`Extension Program for Capturing YouTube Videos Easily`
+- `Chrome Extension for Capturing YouTube Videos Easily`
+- hotkey: Ctrl + Shift + Y
