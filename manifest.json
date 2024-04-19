@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "SreencaptureYT",
+  "version": "1.0",
+  "description": "Capture YouTube video screenshot and copy to clipboard",
+  "permissions": ["activeTab"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "commands": {
+    "take-screenshot": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Y",
+        "mac": "Command+Shift+Y"
+      },
+      "description": "Take YouTube screenshot"
+    }
+  }
+}
