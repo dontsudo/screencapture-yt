@@ -1,12 +1,11 @@
 {
   "manifest_version": 3,
-  "name": "SreencaptureYT",
+  "name": "YouTube Screenshot",
   "version": "1.0",
   "description": "Capture YouTube video screenshot and copy to clipboard",
-  "permissions": ["activeTab"],
+  "permissions": ["activeTab", "scripting"],
   "background": {
-    "scripts": ["background.js"],
-    "persistent": false
+    "service_worker": "background.js"
   },
   "content_scripts": [
     {
